@@ -31,5 +31,5 @@ persona2.nombre = 'Peter';
 console.log(persona2);
 
 
-//Si quieres crear un clon tiene que coger todas las pripiedades
+//Si quieres crear un clon tiene que coger todas las propiedades
 const persona3 = {...persona};
