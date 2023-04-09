@@ -2,7 +2,7 @@
 //Cuando es por default es sin las llaves y puede llevar el nombre que quieras en la importación
 // import heroes from './data/heroes';
 // import heroes, { owners } from './data/heroes';
-import  heroes, { owners } from './data/heroes';
+import  heroes, { owners } from '../data/heroes';
 
 
 console.log( owners );
