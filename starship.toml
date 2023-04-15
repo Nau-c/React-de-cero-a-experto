@@ -1,9 +1,0 @@
-[character.node]
-symbol = " "
-style = "bold green"
-format = "via [$symbol$version]($style) "
-
-[character.git_branch]
-symbol = " "
-style = "bold purple"
-format = "on [$symbol$branch]($style) "
