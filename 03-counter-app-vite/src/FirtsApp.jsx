@@ -14,8 +14,8 @@ const getSaludo = () => {
     }
 }
 
-    export const FirtsApp = () => {
-
+    export const FirtsApp = ( props ) => {
+        console.log( props );
     return (
         <>
             <h1>{ getSaludo() }</h1>
