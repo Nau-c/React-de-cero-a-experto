@@ -18,7 +18,7 @@ const getSaludo = () => {
 
     return (
         <>
-            <h1> { getSaludo() } </h1>
+            <h1>{ getSaludo() }</h1>
             <h2>FirtsApp</h2>
             <p>Soy un subtitulo</p>
             {/* <p>{ JSON.stringify( message ) }</p> */}
