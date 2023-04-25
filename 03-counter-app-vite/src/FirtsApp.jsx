@@ -14,12 +14,13 @@ const getSaludo = () => {
     }
 }
 
-    export const FirtsApp = ( props ) => {
-        console.log( props );
+    export const FirtsApp = ({ props, title, subTitle }) => {
+        console.log( "PROPS", props );
     return (
         <>
             <h1>{ getSaludo() }</h1>
             <h2>FirtsApp</h2>
+            <h3>{ title }</h3>
             <p>Soy un subtitulo</p>
             {/* <p>{ JSON.stringify( message ) }</p> */}
         </>
