@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 const message = {
     message: 'Probando el objeto',
@@ -14,16 +15,27 @@ const getSaludo = () => {
     }
 }
 
-    export const FirtsApp = ({ props, title, subTitle }) => {
+    export const FirtsApp = ({ title, subTitle }) => {
         console.log( "PROPS", props );
+
+        if (!title) {
+            throw new Error('El title no existe')
+        }
+
     return (
         <>
-            <h1>{ getSaludo() }</h1>
+            <h1>{ title }</h1>
+            {/* <h1>{ getSaludo() }</h1> */}
             <h2>FirtsApp</h2>
-            <h3>{ title }</h3>
-            <p>Soy un subtitulo</p>
+            {/* <h3>{ title }</h3> */}
+            <p>{ subTitle }</p>
             {/* <p>{ JSON.stringify( message ) }</p> */}
         </>
 
     )
+}
+
+FirtsApp.propTypes = {
+    title: PropTypes.string.isRequired,
+    subTitle: PropTypes.string
 }
