@@ -1,13 +1,14 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { App, HelloWorldApp } from "./HelloWorldApp";
-import { FirtsApp } from "./FirtsApp";
+import { FirstApp } from "./FirstApp";
 import "./styles.css";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <App />
     <HelloWorldApp />
-    <FirtsApp title="Holaaa" subTitle="test"/>
+    {/* Eliminamos el titulo de FirstApp */}
+    <FirstApp title = "Espero un string" subTitle = {123}/>
   </React.StrictMode>
 );
