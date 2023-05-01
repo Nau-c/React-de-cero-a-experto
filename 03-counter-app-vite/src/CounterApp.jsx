@@ -7,10 +7,11 @@ export const CounterApp = ({ value }) => {
     const [counter, setCounter] = useState(value);
 
     //hooks son constantes para no setear el valor
-    const handleAdd = () => setCounter((count) => count + 1)
+    const handleAdd = () => {setCounter((count) => count + 1)
     const setRest = () => setCounter((count) => count - 1)
     const setMulti = () => setCounter((count) => count * 2)
     const setDivi = () => setCounter(count => count / 2)
+    const reset = () => setCounter(value)
 
     return (
         <>
@@ -20,7 +21,10 @@ export const CounterApp = ({ value }) => {
             <button onClick={setRest}> -1 </button>
             <button onClick={setMulti}> x2 </button>
             <button onClick={setDivi}> /2 </button>
+            <button onClick={reset}> Reset </button>
+
         </>
     );
 
+}
 }
