@@ -15,20 +15,22 @@ const getSaludo = () => {
     }
 }
 
-    export const FirtsApp = ({ title, subTitle }) => {
-        console.log( "PROPS", props );
-
-        if (!title) {
-            throw new Error('El title no existe')
-        }
+    export const FirtsApp = ({ title, subTitle, name }) => {
+        // console.log( "PROPS", props );
+        // subTitle = 'La tierra es grande',
+        // title = 'Prueba de titulo'
+        // if (!title) {
+        //     throw new Error('El title no existe')
+        // }
 
     return (
         <>
             <h1>{ title }</h1>
             {/* <h1>{ getSaludo() }</h1> */}
-            <h2>FirtsApp</h2>
+            {/* <h2>FirtsApp</h2> */}
             {/* <h3>{ title }</h3> */}
             <p>{ subTitle }</p>
+            <p>{ name }</p>
             {/* <p>{ JSON.stringify( message ) }</p> */}
         </>
 
@@ -38,4 +40,10 @@ const getSaludo = () => {
 FirtsApp.propTypes = {
     title: PropTypes.string.isRequired,
     subTitle: PropTypes.string
+}
+
+FirtsApp.defaultProps = {
+    name: 'Nauzet',
+    subTitle: 'No tiene Subtitulo',
+    title: 'No tiene titulo',
 }
