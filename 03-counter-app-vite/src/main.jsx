@@ -2,7 +2,6 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { App, HelloWorldApp } from "./HelloWorldApp";
 import { CounterApp } from "./CounterApp";
-import { ComponenteG } from "./ComponenteG";
 import "./styles.css";
 
 ReactDOM.createRoot(document.getElementById("root") ).render(
