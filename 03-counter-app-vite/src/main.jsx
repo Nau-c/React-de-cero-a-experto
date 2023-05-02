@@ -9,9 +9,8 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     <App />
     <HelloWorldApp />
     {/* Eliminamos el titulo de FirstApp */}
-    <FirstApp title = "Espero un string" subTitle = {123}/>
+    <FirstApp  subTitle = {123}/>
   </React.StrictMode>
 );
 
 
-//Comentario test para ver el commit en github

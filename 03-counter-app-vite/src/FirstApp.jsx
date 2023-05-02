@@ -15,7 +15,7 @@ const message = {
 //     }
 // }
 
-export const FirstApp = ({ props, title, subTitle }) => {
+export const FirstApp = ({ props, title, subTitle, name }) => {
     console.log("PROPS", props);
 
     if (!title) {
@@ -28,6 +28,7 @@ export const FirstApp = ({ props, title, subTitle }) => {
             {/* <h1>{getSaludo()}</h1> */}
             {/* <h2>FirtsApp</h2> */}
             <h3>{ subTitle }</h3>
+            <p>{ name }</p>
             {/* <p>Soy un subtitulo</p> */}
             {/* <p>{ JSON.stringify( message ) }</p> */}
         </>
@@ -38,5 +39,12 @@ export const FirstApp = ({ props, title, subTitle }) => {
 
 FirstApp.propTypes = {
     title: PropTypes.string.isRequired,
-    subTitle: PropTypes.number.isRequired
+    subTitle: PropTypes.number
+}
+
+//Los defaultProps son los valores por defecto de las props y entran antes
+FirstApp.defaultProps = {
+    title: 'Sin titulo',
+    subTitle: 'Sin subtitulo',
+    name: 'Nauzet'
 }
