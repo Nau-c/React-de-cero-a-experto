@@ -10,7 +10,10 @@ describe ('Pruebas con async-await y Fetch', () => {
         
         // expect(url.includes('https://')).toBeTruthy()
 
-        expect(typeof url).toBe('string');
+        // expect(typeof url).toBe('string');
+        
+        const resp = await getImagen();
+        expect(resp).toBe('No tenemos imagen')
     });
 
 });
